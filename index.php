@@ -18,6 +18,38 @@
 		</article>
 
 	<?php endif; ?>
+
+  <div class="row">
+	<div class="twelve column">
+	  <img src="/wp-content/uploads/2016/03/slide-3.jpg">
+	</div>
+  </div>
+
+  <div class="row" id="secondary_menu">
+	<div class="three columns">
+	  <div class="box _center" id="box_1">
+		<h2>Obstetrics & Gynecology</h2>
+	  </div>
+	</div>
+	<div class="three columns">
+	  <div class="box _center" id="box_2">
+		<h2>Midwifery</h2>
+	  </div>
+	</div>
+	<div class="three columns">
+	  <div class="box _center" id="box_3">
+		<h2>Patient Portal</h2>
+	  </div>
+	</div>
+	<div class="three columns">
+	  <div class="box _center" id="box_4">
+		<h2>Book an Appointment</h2>
+	  </div>
+	</div>
+  </div>
+
+
+
 </section>
 </div>
 <?php get_footer(); ?>

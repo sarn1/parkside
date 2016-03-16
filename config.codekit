@@ -38,6 +38,53 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/includes\/libs\/Normalize\/normalize.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/libs\/Normalize\/normalize.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/libs\/Skeleton-2.0.4\/css\/normalize.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/libs\/Skeleton-2.0.4\/css\/normalize.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/libs\/Skeleton-2.0.4\/css\/skeleton.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/libs\/Skeleton-2.0.4\/css\/skeleton.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/libs\/Skeleton-2.0.4\/images\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1156,
+		"inputAbbreviatedPath": "\/includes\/libs\/Skeleton-2.0.4\/images\/favicon.png",
+		"outputAbbreviatedPath": "\/includes\/libs\/Skeleton-2.0.4\/images\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/includes\/libs\/Skeleton-2.0.4\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/libs\/Skeleton-2.0.4\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/includes\/scripts.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -113,6 +160,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/includes\/scss\/_skeleton.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/scss\/_skeleton.scss",
+		"outputAbbreviatedPath": "\/includes\/css\/_skeleton.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/includes\/scss\/_style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -147,7 +210,7 @@
 		},
 	"\/includes\/scss\/main.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
@@ -156,7 +219,7 @@
 		"outputAbbreviatedPath": "\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 1,
 		"useLibsass": 0

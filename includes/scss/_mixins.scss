@@ -3,6 +3,16 @@
 mixins
 =============== */
 
+@mixin debug {
+  border: thin solid #1EAEDB;
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: 7px 9px 10px -3px rgba(140,136,140,1);
+  -moz-box-shadow: 7px 9px 10px -3px rgba(140,136,140,1);
+  box-shadow: 7px 9px 10px -3px rgba(140,136,140,1);
+}
+
 @mixin inline-block {
   display:-moz-inline-stack;
   display:inline-block;
@@ -11,11 +21,16 @@ mixins
 }
 
 @mixin gradient-bg {
-  background: #f8efe0;
-  background: -moz-linear-gradient(top, #f8efe0 0%, #d5a951 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8efe0), color-stop(100%, #d5a951));
-  background: -webkit-linear-gradient(top, #f8efe0 0%, #d5a951 100%);
-  background: -o-linear-gradient(top, #f8efe0 0%, #d5a951 100%);
-  background: -ms-linear-gradient(top, #f8efe0 0%, #d5a951 100%);
-  background: linear-gradient(top, #f8efe0 0%, #d5a951 100%);
+  background: #c5c5c5;
+  background: -moz-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c5c5c5), color-stop(100%, #f5f5f5));
+  background: -webkit-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+  background: -o-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+  background: -ms-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+  background: linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+}
+
+@mixin responsive-img {
+  width: 100%;
+  height: auto;
 }
