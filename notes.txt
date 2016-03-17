@@ -1,0 +1,6 @@
+==========
+NOTES
+==========
+Build external libraries put into SASS libraries
+- Normalize 3.0.3 - https://necolas.github.io/normalize.css/
+- Skeleton 2.0.4 - http://getskeleton.com/
