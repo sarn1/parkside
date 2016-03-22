@@ -1088,46 +1088,83 @@ body {
   font-family: "Raleway", Verdana, Geneva, sans-serif; }
   /* line 13, includes/scss/_style.scss */
   body a {
-    color: #6699cc; }
-  /* line 17, includes/scss/_style.scss */
+    color: #6699cc;
+    text-decoration: none; }
+  /* line 18, includes/scss/_style.scss */
   body h1 {
     font-size: 32px;
     line-height: 38px; }
-  /* line 22, includes/scss/_style.scss */
+  /* line 23, includes/scss/_style.scss */
   body h2 {
     font-size: 25px;
     line-height: 20px; }
-  /* line 27, includes/scss/_style.scss */
+  /* line 28, includes/scss/_style.scss */
   body img {
     width: 100%;
     height: auto; }
-  /* line 31, includes/scss/_style.scss */
+  /* line 32, includes/scss/_style.scss */
   body #content_body {
     max-width: 1270px;
     margin: auto;
+    font-size: 16px;
+    line-height: 20px;
     border: thin solid #1EAEDB; }
-    /* line 38, includes/scss/_style.scss */
-    body #content_body #secondary_menu .box {
-      border: thin solid #1EAEDB;
-      -webkit-box-shadow: 7px 9px 10px -3px #8c888c;
-      -moz-box-shadow: 7px 9px 10px -3px #8c888c;
-      box-shadow: 7px 9px 10px -3px #8c888c;
-      padding: 40px 0 20px 0; }
-    /* line 44, includes/scss/_style.scss */
-    body #content_body #secondary_menu #box_1 {
-      background-color: #dbeab3; }
-    /* line 48, includes/scss/_style.scss */
-    body #content_body #secondary_menu #box_2 {
-      background-color: #f3dad0; }
-    /* line 52, includes/scss/_style.scss */
-    body #content_body #secondary_menu #box_3, body #content_body #secondary_menu #box_4 {
-      background: #c5c5c5;
-      background: -moz-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c5c5c5), color-stop(100%, #f5f5f5));
-      background: -webkit-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
-      background: -o-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
-      background: -ms-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
-      background: linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%); }
+    /* line 41, includes/scss/_style.scss */
+    body #content_body #secondary_menu {
+      margin: 10px auto 20px auto; }
+      /* line 45, includes/scss/_style.scss */
+      body #content_body #secondary_menu .box {
+        border: thin solid #1EAEDB;
+        -webkit-box-shadow: 7px 9px 10px -3px #8c888c;
+        -moz-box-shadow: 7px 9px 10px -3px #8c888c;
+        box-shadow: 7px 9px 10px -3px #8c888c;
+        padding: 40px 0 20px 0; }
+      /* line 51, includes/scss/_style.scss */
+      body #content_body #secondary_menu #box_1 {
+        background-color: #dbeab3; }
+      /* line 55, includes/scss/_style.scss */
+      body #content_body #secondary_menu #box_2 {
+        background-color: #f3dad0; }
+      /* line 59, includes/scss/_style.scss */
+      body #content_body #secondary_menu #box_3, body #content_body #secondary_menu #box_4 {
+        background: #c5c5c5;
+        background: -moz-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c5c5c5), color-stop(100%, #f5f5f5));
+        background: -webkit-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+        background: -o-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+        background: -ms-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
+        background: linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%); }
+    /* line 65, includes/scss/_style.scss */
+    body #content_body article[role="main"] {
+      margin-top: 20px; }
+    /* line 71, includes/scss/_style.scss */
+    body #content_body .side_widget {
+      border: thin solid #000;
+      width: 95%;
+      margin-bottom: 10px; }
+      /* line 76, includes/scss/_style.scss */
+      body #content_body .side_widget.full {
+        width: 100%; }
+      /* line 80, includes/scss/_style.scss */
+      body #content_body .side_widget .head {
+        padding: 21px 15px 1px 15px;
+        text-align: center; }
+        /* line 84, includes/scss/_style.scss */
+        body #content_body .side_widget .head.primary {
+          background-color: #dbeab3; }
+        /* line 88, includes/scss/_style.scss */
+        body #content_body .side_widget .head.secondary {
+          background-color: #cce5ff; }
+      /* line 93, includes/scss/_style.scss */
+      body #content_body .side_widget .body {
+        padding: 15px; }
+  /* line 100, includes/scss/_style.scss */
+  body footer {
+    background-color: #dbeab3;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 38px; }
 
 /*
 ===============

@@ -12,6 +12,7 @@ body {
 
   a {
     color: $link-color;
+    text-decoration: none;
   }
 
   h1 {
@@ -31,10 +32,16 @@ body {
   #content_body {
     max-width: $max-width;
     margin:auto;
+    font-size: $font-size;
+    line-height: $line-height;
 
     @include debug;
 
+    //secondary box menu
     #secondary_menu {
+
+      margin: 10px auto 20px auto;
+
       .box {
        @include debug;
         @include box-shadow;
@@ -53,7 +60,49 @@ body {
         @include gradient-bg;
       }
     }
+
+    //main article
+    article[role="main"] {
+      margin-top: 20px;
+    }
+
+
+    //widget box
+    .side_widget {
+      border: thin solid #000;
+      width: 95%;
+      margin-bottom: 10px;
+
+      &.full {
+        width: 100%;
+      }
+
+      .head {
+        padding: 21px 15px 1px 15px;
+        text-align: center;
+
+        &.primary {
+          background-color: $primary-color;
+        }
+
+        &.secondary {
+          background-color: $secondary-color;
+        }
+      }
+
+      .body {
+        padding: 15px;
+      }
+    }
   }
 
+  //footer
+  footer {
+    background-color: $primary-color;
+    text-align: center;
+    margin-top: 30px;
+    font-size: $font-size-sm;
+    line-height: $line-height-lg;
+  }
 
 }
