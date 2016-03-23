@@ -9,3 +9,7 @@ Build external libraries put into SASS libraries
 TODO
 ==========
 - security plugins to hide
+- minify head
+- widget be real
+- current page menu highlight
+- data entry

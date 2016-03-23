@@ -4,7 +4,22 @@ mixins
 =============== */
 
 @mixin debug {
-  border: thin solid #1EAEDB;
+  border: thin solid #FF0000; /* red */
+}
+@mixin debug1 {
+  border: thin solid #7FFF00; /* neon green */
+}
+@mixin debug2 {
+  border: thin solid #FF1493; /* deep pink */
+}
+@mixin debug3 {
+  border: thin solid #FFA500; /* orange */
+}
+@mixin debug4 {
+  border: thin solid #9932CC; /* purple */
+}
+@mixin debug5 {
+  border: thin solid #00FFFF; /* sky blue */
 }
 
 @mixin box-shadow {
