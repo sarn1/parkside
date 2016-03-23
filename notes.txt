@@ -4,6 +4,16 @@ NOTES
 Build external libraries put into SASS libraries
 - Normalize 3.0.3 - https://necolas.github.io/normalize.css/
 - Skeleton 2.0.4 - http://getskeleton.com/
+- Phone number in footer is blog tagline
+
+==========
+PLUGINS
+==========
+- tinymce advanced
+- automatic plugin update
+- backup buddy --- *** ---
+- enable media replace
+
 
 ==========
 TODO
@@ -12,4 +22,7 @@ TODO
 - minify head
 - widget be real
 - current page menu highlight
-- data entry
+- driving directions contact form
+- types for obstetric/geneocology
+- form assets - instructions and paitent form
+- layout for list and tables on contact page, instructions, paitent form
