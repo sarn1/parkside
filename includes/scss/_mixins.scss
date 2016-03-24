@@ -45,6 +45,12 @@ mixins
   background: linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
 }
 
+@mixin no-space {
+  font-size:0;
+  line-height:0;
+  letter-spacing: 0;
+}
+
 @mixin responsive-img {
   width: 100%;
   height: auto;

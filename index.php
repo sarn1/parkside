@@ -1,115 +1,141 @@
 <?php get_header(); ?>
-<div id="content_body">
 <section>
-<?php if (have_posts()) :
-		while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		  <!-- maybe this is not in a row but span 100% of width -->
-		  <div class="row">
-			<div class="twelve columns">
-			  <img src="/wp-content/uploads/2016/03/slide-3.jpg">
-			</div>
-		  </div>
-
-		  <div class="row" id="secondary_menu">
-			<div class="three columns">
-			  <div class="box _center" id="box_1">
-				<h2>Obstetrics & Gynecology</h2>
-			  </div>
-			</div>
-			<div class="three columns">
-			  <div class="box _center" id="box_2">
-				<h2>Midwifery</h2>
-			  </div>
-			</div>
-			<div class="three columns">
-			  <div class="box _center" id="box_3">
-				<h2>Patient Portal</h2>
-			  </div>
-			</div>
-			<div class="three columns">
-			  <div class="box _center" id="box_4">
-				<h2>Book an Appointment</h2>
-			  </div>
-			</div>
-		  </div>
-
-		  <div class="row">
-			<div class="six columns">
-			  <article role="main">
-				<h1><?php the_title(); ?></h1>
-				<?php the_content(); ?>
-			  </article>
-			</div>
-
-			<div class="six columns">
-			  <aside>
-				<?php if (is_front_page()): ?>
-				  <div class="row">
-					<div class="six columns">
-                      <?php if (is_front_page()): ?>
-						  <div class="side_widget">
-							<div class="head primary">
-							  <h2>news <span>&</span> events here</h2>
-							</div>
-							<div class="body">
-							  content ddddddd
-							</div>
-						  </div>
-					  <?php else: ?>
-						google map here
-					  <?php endif; ?>
-					</div>
-					<div class="six columns">
-					  <?php get_sidebar(); ?>
-					</div>
-				  </div>
-
-			<?php if (is_front_page()): ?>
-
-
-			<div class="row">
-			  <div class="twelve columns">
-				<div class="side_widget full">
-				  <div class="head secondary">
-					<h2>location <span>&</span> hours</h2>
-				  </div>
-				  <div class="body">
-                    <div class="row">
-                      <div class="six columns">
-                          location
-                      </div>
-                      <div class="six columns">
-                          hours
-                      </div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<?php endif; ?>
-				<?php else: ?>
-				<div class="row">
-				  <div class="twelve columns">
-					<?php get_sidebar(); ?>
-				  </div>
-				</div>
-				<?php endif; ?>
-
-			  </aside>
-		  	</div>
-
-
-
-
-	<?php endwhile;
-	elseif (is_404()) : ?>
-
-		<article>
-		<h1>We're sorry...</h1>
-		<p>Looks like we can't find the page you are looking for!</p>
-		</article>
-
-	<?php endif; ?>
-</section>
+<div id="banner">
+  <?php
+  //if homepage, slider, else feat. image
+  if (is_front_page()) {
+    if (function_exists('soliloquy')) {
+      soliloquy('84');
+    }
+    if (function_exists('soliloquy')) {
+      soliloquy('homepage-slider', 'slug');
+    }
+  } else {
+    if ( has_post_thumbnail() ) {
+      the_post_thumbnail('full');
+    }
+  }
+  ?>
 </div>
+
+<div id="content_body">
+  <div class="row" id="secondary_menu">
+    <div class="three columns">
+      <div class="box _center" id="box_1">
+        <h2>Obstetrics & Gynecology</h2>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="box _center" id="box_2">
+        <h2>Midwifery</h2>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="box _center" id="box_3">
+        <h2>Patient Portal</h2>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="box _center" id="box_4">
+        <h2>Book an Appointment</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+      <article role="main">
+        <h1><?php the_title(); ?></h1>
+        <?php the_content(); ?>
+      </article>
+    </div>
+
+    <div class="six columns">
+      <aside>
+
+        <?php
+        //if homepage or contact page
+        if (is_front_page() || get_the_ID() == 32):
+        ?>
+
+          <div class="row">
+            <div class="six columns">
+              <?php if (is_front_page()): ?>
+                  <div class="side_widget">
+                    <div class="head primary">
+                      <h2>NEWS <span>&</span> EVENTS</h2>
+                    </div>
+                    <div class="body">
+                      <?php echo do_shortcode('[content_block id=94]'); ?>
+                    </div>
+                  </div>
+              <?php else: ?>
+                <div class="side_widget">
+                  <div class="head primary">
+                    <h2>FIND US!</h2>
+                  </div>
+                  <div class="body google_maps">
+                    <iframe frameborder="0" width="100%" height="10%" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Parkside+Obstetrics+Gynecology+%26+Infertility,+S.C.+1875+Dempster+St+%23465+Park+Ridge,+IL+60068&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=54.269804,79.013672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=parkside+obstetrics+gynecology+%26+infertility+sc+1875+dempster+st+465&amp;hnear=Park+Ridge,+Cook,+Illinois&amp;t=m&amp;cid=6935562693122326237&amp;ll=42.059744,-87.844448&amp;spn=0.044607,0.060081&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Parkside+Obstetrics+Gynecology+%26+Infertility,+S.C.+1875+Dempster+St+%23465+Park+Ridge,+IL+60068&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=54.269804,79.013672&amp;vpsrc=6&amp;ie=UTF8&amp;hq=parkside+obstetrics+gynecology+%26+infertility+sc+1875+dempster+st+465&amp;hnear=Park+Ridge,+Cook,+Illinois&amp;t=m&amp;cid=6935562693122326237&amp;ll=42.059744,-87.844448&amp;spn=0.044607,0.060081&amp;z=13&amp;iwloc=A" text-align:left">View Larger Map</a>
+                  </div>
+                </div>
+              <?php endif; ?>
+            </div>
+            <div class="six columns">
+              <?php get_sidebar(); ?>
+            </div>
+          </div>
+
+          <?php if (is_front_page()): ?>
+          <div class="row">
+            <div class="twelve columns">
+              <div class="side_widget full hours_location">
+                <div class="head secondary">
+                  <h2>LOCATION <span>&</span> HOURS</h2>
+                </div>
+                <div class="body">
+                  <div class="row">
+                    <div class="six columns">
+                      <?php echo do_shortcode('[content_block id=99]'); ?>
+                    </div>
+                    <div class="six columns hours_location_block">
+                      <?php echo do_shortcode('[content_block id=101]'); ?>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php endif; ?>
+
+
+        <?php else: // every other page  ?>
+
+          <div class="row">
+            <div class="six columns">&nbsp;</div>
+            <div class="six columns">
+              <?php get_sidebar(); ?>
+            </div>
+          </div>
+
+        <?php endif; ?>
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+<?php endwhile; elseif (is_404()) : ?>
+  <div id="content_body">
+    <article>
+    <h1>We're sorry...</h1>
+    <p>Looks like we can't find the page you are looking for!</p>
+    </article>
+  </div>
+<?php endif; ?>
+
+
+</section>
+
 <?php get_footer(); ?>

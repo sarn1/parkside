@@ -16,6 +16,12 @@ body {
     text-decoration: none;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-stack-2;
+    margin:0;
+    padding:0;
+  }
+  
   h1 {
     font-size: $font-size-lg;
     line-height: $line-height-lg;
@@ -24,6 +30,10 @@ body {
   h2 {
     font-size: $font-size-md;
     line-height: $line-height-md;
+
+    span {
+      color: $link-color;
+    }
   }
 
   img {
@@ -33,7 +43,7 @@ body {
   //head
   .head_top {
     max-width: $max-width;
-    margin: auto;
+    margin: auto auto 10px auto;
 
     h2 {
       margin-right: 8px;
@@ -45,6 +55,14 @@ body {
       h1 {
         font-size: $font-size-xlg;
         line-height: $line-height-xlg;
+
+        a {
+          color: $font-color;
+
+          span {
+            color: $link-color;
+          }
+        }
       }
     }
 
@@ -59,6 +77,14 @@ body {
     width:100%;
     text-align: center;
     background-color: $primary-color;
+
+    & > a {
+      font-color: $primary-color;
+    }
+
+    .current-menu-parent>a, .current-menu-item a {
+      color: $link-color;
+    }
   }
 
   nav ul {
@@ -95,11 +121,13 @@ body {
     width: $sub-menu-max-width;
     position: absolute;
     top:100%;
-    left: 0;
+    left: -55px;
     z-index: 999999;
     height: 0px;
     overflow: hidden;
     min-width: 100%;
+    background-color: $primary-color;
+    padding: 10px 5px;
 
     -webkit-transition: opacity 0.4s ease-out;
     -moz-transition: opacity 0.4s ease-out;
@@ -140,12 +168,21 @@ body {
     background: $primary-color;
   }
 
+  //banner area
+  #banner {
+    max-width: $max-banner-width;
+    width: 100%;
+    margin: auto;
+    @include no-space;
+    @include debug5;
+  }
+
+  //content body
   #content_body {
     max-width: $max-width;
     margin:auto;
     font-size: $font-size;
     line-height: $line-height;
-
     @include debug;
 
     //secondary box menu
@@ -156,7 +193,7 @@ body {
       .box {
        @include debug;
         @include box-shadow;
-        padding: 40px 0 20px 0;
+        padding: 40px 0 40px 0;
       }
 
       #box_1 {
@@ -186,10 +223,21 @@ body {
 
       &.full {
         width: 100%;
+
+        &.hours_location {
+
+          span {
+            color: #FFF;
+          }
+
+          .hours_location_block {
+            padding-left: 15px; //look out!
+          }
+        }
       }
 
       .head {
-        padding: 21px 15px 1px 15px;
+        padding: 0 5px;
         text-align: center;
 
         &.primary {
@@ -199,10 +247,29 @@ body {
         &.secondary {
           background-color: $secondary-color;
         }
+
+        h2 {
+          padding: 15px 0;
+        }
       }
 
       .body {
         padding: 15px;
+
+        &.google_maps {
+          padding: 0 0 15px 0; //override for google maps widget
+          border: 1thin solid $font-color;
+          text-align: center;
+
+          a {
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
+          }
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
       }
     }
   }

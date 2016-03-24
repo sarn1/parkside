@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/includes/ie.css" /><![endif]--><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
   <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'></head>
-
+<link href='https://fonts.googleapis.com/css?family=Raleway:300,300italic' rel='stylesheet' type='text/css'>
 <body <?php body_class(); ?>>
 
 <div class="row head_top">
@@ -17,7 +17,7 @@
 </div>
 
 <div class="row head_top title">
-  <h1>Parkside Obstetrics, Gynecology & Midwifery</h1>
+  <h1><a href="/">Parkside Obstetrics, Gynecology <span>&</span> Midwifery</a></h1>
 </div>
 
 <header>
