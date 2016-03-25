@@ -24,6 +24,7 @@
   <div class="row">
     <div class="twelve columns">
       <nav>
+        <?php echo do_shortcode( '[responsive-menu menu="main-menu"]' ); ?>
         <?php wp_nav_menu(array('theme_location'=>'main-menu','container_class'=>'main-menu')); ?>
       </nav>
     </div>

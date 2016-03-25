@@ -236,7 +236,13 @@ body {
 
       .box {
         @include box-shadow;
-        padding: 40px 0 40px 0;
+        padding: 40px 5px;
+
+        h2 {
+          a {
+            color: $font-color;
+          }
+        }
       }
 
       #box_1 {
@@ -338,8 +344,9 @@ body {
     background-color: $primary-color;
     text-align: center;
     margin-top: 30px;
+    padding: 5px 5px 2px 5px;
     font-size: $font-size-sm;
-    line-height: $line-height-lg;
+    line-height: $line-height-sm;
   }
 
   //custom toggle box

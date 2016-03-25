@@ -3,65 +3,131 @@
 Media Queries
 =============== */
 
-/*==================================================
-=            Bootstrap 3 Media Queries             =
-==================================================*/
+//padding when screen hits template max
+@media only screen and (max-width : 1215px) {
+  body {
+    @include debug;
+    .head_top {
+      margin-right: 20px;
+    }
 
+    #content_body {
+      padding-left: 20px;
+      padding-right: 20px;
 
+      #secondary_menu {
+        .box {
+          height: 40px;
+          padding: 45px 5px 35px 5px;
+        }
+      }
+    }
 
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+  }
 }
 
 
+//for 6/6 template, split aside widgets
+@media only screen and (max-width : 1000px) {
+  body{
+    @include debug2;
 
-/*==========  Non-Mobile First Method  ==========*/
+    #content_body {
+      aside {
+        .six.columns {
+          width: 100%;
+          margin:0;
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+          .side_widget {
+            margin:0 0 10px 0;
+            width: 100%;
+          }
+
+          .u-pull-right {
+            float:none;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+//for 9/3 template to push aside down, article full
+@media only screen and (max-width : 950px) {
+  body{
+    #content_body {
+
+      .nine.columns {
+        width: 100%;
+      }
+
+      aside {
+        .three.columns {
+          width: 100%;
+
+          .side_widget {
+            width: 100%;
+          }
+
+          .u-pull-right {
+            float:none;
+          }
+        }
+      }
+    }
+  }
 
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+//secondary menu flush individual
+@media only screen and (max-width : 675px) {
+  body {
+    @include debug3;
 
+    #content_body{
+      #secondary_menu {
+        .three.columns {
+          width: 100%;
+          margin:0;
+          padding:0;
+
+          .box {
+            height: 20px;
+            padding: 15px 5px;
+          }
+        }
+      }
+    }
+  }
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
 
+//mobile h1 make smaller to fit mobile menu
+@media only screen and (max-width : 600px) {
+  body {
+
+    h1 {
+      font-size: $font-size-lg;
+      line-height: $font-size-lg;
+    }
+
+    .head_top.title h1 {
+      font-size: $font-size-lg;
+      line-height: $font-size-lg;
+    }
+
+    nav {
+      margin-top: 65px;
+    }
+  }
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+//small phone menu positioning
+@media only screen and (max-width : 390px) {
+  body {
+    section {
+      margin-top: -20px;
+    }
+  }
 }

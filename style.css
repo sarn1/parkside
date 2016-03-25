@@ -1279,14 +1279,17 @@ body {
         -webkit-box-shadow: 7px 9px 10px -3px #8c888c;
         -moz-box-shadow: 7px 9px 10px -3px #8c888c;
         box-shadow: 7px 9px 10px -3px #8c888c;
-        padding: 40px 0 40px 0; }
-      /* line 242, includes/scss/_style.scss */
+        padding: 40px 5px; }
+        /* line 242, includes/scss/_style.scss */
+        body #content_body #secondary_menu .box h2 a {
+          color: #333333; }
+      /* line 248, includes/scss/_style.scss */
       body #content_body #secondary_menu #box_1 {
         background-color: #dbeab3; }
-      /* line 246, includes/scss/_style.scss */
+      /* line 252, includes/scss/_style.scss */
       body #content_body #secondary_menu #box_2 {
         background-color: #f3dad0; }
-      /* line 250, includes/scss/_style.scss */
+      /* line 256, includes/scss/_style.scss */
       body #content_body #secondary_menu #box_3, body #content_body #secondary_menu #box_4 {
         background: #c5c5c5;
         background: -moz-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
@@ -1295,75 +1298,76 @@ body {
         background: -o-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
         background: -ms-linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%);
         background: linear-gradient(top, #c5c5c5 0%, #f5f5f5 100%); }
-    /* line 256, includes/scss/_style.scss */
+    /* line 262, includes/scss/_style.scss */
     body #content_body article[role="main"] {
       margin-top: 20px; }
-      /* line 260, includes/scss/_style.scss */
+      /* line 266, includes/scss/_style.scss */
       body #content_body article[role="main"] h1 span {
         color: #dbeab3; }
-      /* line 266, includes/scss/_style.scss */
+      /* line 272, includes/scss/_style.scss */
       body #content_body article[role="main"] table td:first-child {
         width: 97px; }
-      /* line 270, includes/scss/_style.scss */
+      /* line 276, includes/scss/_style.scss */
       body #content_body article[role="main"] table tr:first-child {
         border-top: 1px solid #e1e1e1; }
-    /* line 278, includes/scss/_style.scss */
+    /* line 284, includes/scss/_style.scss */
     body #content_body .side_widget {
       border: thin solid #000;
       width: 95%;
       margin-bottom: 10px; }
-      /* line 283, includes/scss/_style.scss */
+      /* line 289, includes/scss/_style.scss */
       body #content_body .side_widget.full {
         width: 100%; }
-        /* line 288, includes/scss/_style.scss */
+        /* line 294, includes/scss/_style.scss */
         body #content_body .side_widget.full.hours_location span {
           color: #FFF; }
-        /* line 292, includes/scss/_style.scss */
+        /* line 298, includes/scss/_style.scss */
         body #content_body .side_widget.full.hours_location .hours_location_block {
           padding-left: 15px; }
-      /* line 298, includes/scss/_style.scss */
+      /* line 304, includes/scss/_style.scss */
       body #content_body .side_widget .head {
         padding: 0 5px;
         text-align: center; }
-        /* line 302, includes/scss/_style.scss */
+        /* line 308, includes/scss/_style.scss */
         body #content_body .side_widget .head.primary {
           background-color: #dbeab3; }
-        /* line 306, includes/scss/_style.scss */
+        /* line 312, includes/scss/_style.scss */
         body #content_body .side_widget .head.secondary {
           background-color: #cce5ff; }
-        /* line 310, includes/scss/_style.scss */
+        /* line 316, includes/scss/_style.scss */
         body #content_body .side_widget .head h2 {
           padding: 15px 0; }
-      /* line 315, includes/scss/_style.scss */
+      /* line 321, includes/scss/_style.scss */
       body #content_body .side_widget .body {
         padding: 15px; }
-        /* line 318, includes/scss/_style.scss */
+        /* line 324, includes/scss/_style.scss */
         body #content_body .side_widget .body.google_maps {
           padding: 0 0 15px 0;
           border: 1thin solid #333333;
           text-align: center; }
-          /* line 323, includes/scss/_style.scss */
+          /* line 329, includes/scss/_style.scss */
           body #content_body .side_widget .body.google_maps a {
             font-size: 14px;
             line-height: 20px; }
-        /* line 329, includes/scss/_style.scss */
+        /* line 335, includes/scss/_style.scss */
         body #content_body .side_widget .body p {
           margin-bottom: 1rem; }
-  /* line 337, includes/scss/_style.scss */
+  /* line 343, includes/scss/_style.scss */
   body footer {
     background-color: #dbeab3;
     text-align: center;
     margin-top: 30px;
+    padding: 5px 5px 2px 5px;
     font-size: 14px;
-    line-height: 38px; }
-  /* line 347, includes/scss/_style.scss */
+    line-height: 20px; }
+  /* line 354, includes/scss/_style.scss */
   body dl.toggle_box dt {
     color: #6699cc;
     margin-top: 10px; }
-    /* line 351, includes/scss/_style.scss */
+    /* line 358, includes/scss/_style.scss */
     body dl.toggle_box dt:hover {
       cursor: pointer; }
-  /* line 356, includes/scss/_style.scss */
+  /* line 363, includes/scss/_style.scss */
   body dl.toggle_box dd {
     display: none;
     margin: 5px 0 15px 0; }
@@ -1372,18 +1376,78 @@ body {
 ===============
 Media Queries
 =============== */
-/*==================================================
-=            Bootstrap 3 Media Queries             =
-==================================================*/
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
-/*==========  Non-Mobile First Method  ==========*/
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Custom, iPhone Retina */
+@media only screen and (max-width: 1215px) {
+  /* line 8, includes/scss/_media_queries.scss */
+  body {
+    border: thin solid #FF0000;
+    /* red */ }
+    /* line 10, includes/scss/_media_queries.scss */
+    body .head_top {
+      margin-right: 20px; }
+    /* line 14, includes/scss/_media_queries.scss */
+    body #content_body {
+      padding-left: 20px;
+      padding-right: 20px; }
+      /* line 19, includes/scss/_media_queries.scss */
+      body #content_body #secondary_menu .box {
+        height: 40px;
+        padding: 45px 5px 35px 5px; } }
+@media only screen and (max-width: 1000px) {
+  /* line 32, includes/scss/_media_queries.scss */
+  body {
+    border: thin solid #FF1493;
+    /* deep pink */ }
+    /* line 37, includes/scss/_media_queries.scss */
+    body #content_body aside .six.columns {
+      width: 100%;
+      margin: 0; }
+      /* line 41, includes/scss/_media_queries.scss */
+      body #content_body aside .six.columns .side_widget {
+        margin: 0 0 10px 0;
+        width: 100%; }
+      /* line 46, includes/scss/_media_queries.scss */
+      body #content_body aside .six.columns .u-pull-right {
+        float: none; } }
+@media only screen and (max-width: 950px) {
+  /* line 61, includes/scss/_media_queries.scss */
+  body #content_body .nine.columns {
+    width: 100%; }
+  /* line 66, includes/scss/_media_queries.scss */
+  body #content_body aside .three.columns {
+    width: 100%; }
+    /* line 69, includes/scss/_media_queries.scss */
+    body #content_body aside .three.columns .side_widget {
+      width: 100%; }
+    /* line 73, includes/scss/_media_queries.scss */
+    body #content_body aside .three.columns .u-pull-right {
+      float: none; } }
+@media only screen and (max-width: 675px) {
+  /* line 85, includes/scss/_media_queries.scss */
+  body {
+    border: thin solid #FFA500;
+    /* orange */ }
+    /* line 90, includes/scss/_media_queries.scss */
+    body #content_body #secondary_menu .three.columns {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      /* line 95, includes/scss/_media_queries.scss */
+      body #content_body #secondary_menu .three.columns .box {
+        height: 20px;
+        padding: 15px 5px; } }
+@media only screen and (max-width: 600px) {
+  /* line 110, includes/scss/_media_queries.scss */
+  body h1 {
+    font-size: 32px;
+    line-height: 32px; }
+  /* line 115, includes/scss/_media_queries.scss */
+  body .head_top.title h1 {
+    font-size: 32px;
+    line-height: 32px; }
+  /* line 120, includes/scss/_media_queries.scss */
+  body nav {
+    margin-top: 65px; } }
+@media only screen and (max-width: 390px) {
+  /* line 129, includes/scss/_media_queries.scss */
+  body section {
+    margin-top: -20px; } }
