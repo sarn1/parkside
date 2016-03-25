@@ -14,10 +14,8 @@ $widgetareas = array(
 add_theme_support('menus'); //enable menus
 add_theme_support('post-thumbnails'); //enable post thumbnails
 add_theme_support( 'title-tag' ); //enable title
- 
 
 //register nav menus
-
 add_action('init','jet4_register_nav_menus');
 function jet4_register_nav_menus() {
   global $navmenus;
@@ -32,10 +30,7 @@ function jet4_register_nav_menus() {
   }
 }
 
-
-
 //register widget areas
-
 add_action('init','jet4_register_widget_areas');
 function jet4_register_widget_areas() {
   global $widgetareas;
@@ -53,10 +48,7 @@ function jet4_register_widget_areas() {
   }
 }
 
-
-
 //register theme script
-
 add_action('init','jet4_register_theme_script');
 function jet4_register_theme_script() {
   if ( !is_admin() ) {
@@ -227,9 +219,5 @@ function add_category_automatically1($post_ID) {
             wp_set_object_terms($post_ID, $cat, 'category', true);  
         }  
 }  
-add_action('publish_post', 'add_category_automatically1');  
-
-
+add_action('publish_post', 'add_category_automatically1');
 */
-
-?>

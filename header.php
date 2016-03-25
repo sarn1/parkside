@@ -12,7 +12,7 @@
     <a href="https://www.facebook.com/Parkside-OBGYN-and-Medical-Spa-Beth-Roland-MD-111133702255417/" target="_blank"">
     <img src="/wp-content/uploads/2016/03/ico-facebook.gif" alt="Find Us On Facebook!" title="Find Us On Facebook!" id="ico_facebook" class="u-pull-right">
     </a>
-    <h2 class="u-pull-right">847-825-1100</h2>
+    <h2 class="u-pull-right"><a href="tel:1-847-825-1100">847-825-1100</a></h2>
   </div>
 </div>
 

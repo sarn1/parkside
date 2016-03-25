@@ -30,8 +30,5 @@ TODO
 - minify head, sidebar
 - compress css
 
-- layout for list and tables on contact page, instructions, paitent form
 - responsive & test
-- contact page drive from
-
 - backup existing site

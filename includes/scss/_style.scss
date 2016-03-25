@@ -23,14 +23,42 @@ body {
     padding:0;
   }
 
+  p, table {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  p + table, p + form {
+    margin-top: -10px;
+  }
+
   ul {
     list-style: disc;
-    margin:0;
+    margin:-10px 0 0 0;
     padding:5px 5px 5px 25px;
 
     li {
       margin-bottom:2px;
     }
+  }
+
+  //for contact page addr google map
+  input[type="text"] {
+    max-width: 262px;
+    width: 100%;
+    height: 32px;
+    border: thin solid $font-color;
+    border-radius: 0;
+    margin-right: 10px;
+  }
+
+  input[type="submit"] {
+    border: thin solid $primary-color;
+    border-radius: 0;
+    height: 32px;
+    line-height: 32px;
+    background-color: $primary-color;
+    color: $font-color;
+    padding: 0 15px;
   }
 
   //end
@@ -53,6 +81,7 @@ body {
     @include responsive-img;
   }
 
+
   //head
   .head_top {
     max-width: $max-width;
@@ -61,6 +90,10 @@ body {
     h2 {
       margin-right: 8px;
       padding-top: 5px;
+
+      a {
+        color: $font-color;
+      }
     }
 
     &.title {
@@ -92,7 +125,7 @@ body {
     background-color: $primary-color;
 
     & > a {
-      font-color: $primary-color;
+      color: $primary-color;
     }
 
     .current-menu-parent>a, .current-menu-item a {
@@ -187,7 +220,6 @@ body {
     width: 100%;
     margin: auto;
     @include no-space;
-    @include debug5;
   }
 
   //content body
@@ -196,7 +228,6 @@ body {
     margin:auto;
     font-size: $font-size;
     line-height: $line-height;
-    @include debug;
 
     //secondary box menu
     #secondary_menu {
@@ -204,7 +235,6 @@ body {
       margin: 10px auto 20px auto;
 
       .box {
-       @include debug;
         @include box-shadow;
         padding: 40px 0 40px 0;
       }
@@ -229,6 +259,16 @@ body {
       h1 {
         span {
           color: $primary-color;
+        }
+      }
+
+      table { // for adobe
+        td:first-child {
+          width: 97px;
+        }
+
+        tr:first-child {
+          border-top: 1px solid #e1e1e1;
         }
       }
     }
