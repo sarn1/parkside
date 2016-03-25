@@ -16,12 +16,25 @@ body {
     text-decoration: none;
   }
 
+  //skeleton overrides
   h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack-2;
     margin:0;
     padding:0;
   }
-  
+
+  ul {
+    list-style: disc;
+    margin:0;
+    padding:5px 5px 5px 25px;
+
+    li {
+      margin-bottom:2px;
+    }
+  }
+
+  //end
+
   h1 {
     font-size: $font-size-lg;
     line-height: $line-height-lg;
@@ -212,6 +225,12 @@ body {
     //main article
     article[role="main"] {
       margin-top: 20px;
+
+      h1 {
+        span {
+          color: $primary-color;
+        }
+      }
     }
 
 
@@ -282,5 +301,23 @@ body {
     font-size: $font-size-sm;
     line-height: $line-height-lg;
   }
+
+  //custom toggle box
+  dl.toggle_box {
+    dt {
+      color: $link-color;
+      margin-top: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    dd {
+      display:none;
+      margin: 5px 0 15px 0;
+    }
+  }
+
 
 }

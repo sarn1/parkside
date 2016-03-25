@@ -48,7 +48,19 @@
     <div class="six columns">
       <article role="main">
         <h1><?php the_title(); ?></h1>
-        <?php the_content(); ?>
+        <?php
+          //if gynecology page use post type
+          if (get_the_ID() == 23) {
+            my_output_cpt('gynecology-type');
+          } elseif (get_the_ID() == 28) {
+            my_output_cpt('obstetric');
+            echo '<h1>COMPLICATIONS OF PREGNANCY</h1>';
+            my_output_cpt('obstetric_comp');
+          }else {
+            the_content();
+          }
+
+        ?>
       </article>
     </div>
 

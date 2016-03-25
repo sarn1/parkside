@@ -7,6 +7,8 @@ Build external libraries put into SASS libraries
 - Phone number in footer is blog tagline
 - Google Font - Raleway Light
 - Google Maps on contact page is hardcoded in index.php
+- UPDATED TOGGLE BOX CODE - Custom javascript & functionality for toggle box in: functions.php, scripts.min.js and styles.
+
 
 ==========
 PLUGINS
@@ -17,6 +19,8 @@ PLUGINS
 - enable media replace
 - soliloquy
 - custom post widget
+- toolset types
+- post type order
 
 
 ==========
@@ -24,8 +28,10 @@ TODO
 ==========
 - security plugins to hide
 - minify head, sidebar
-- types for obstetric/geneocology
-- form assets - instructions and paitent form
+- compress css
+
 - layout for list and tables on contact page, instructions, paitent form
 - responsive & test
 - contact page drive from
+
+- backup existing site

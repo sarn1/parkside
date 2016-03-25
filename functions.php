@@ -10,8 +10,6 @@ $widgetareas = array(
 	'Sidebar'
 );
 
- 
-
 //enable theme features
 add_theme_support('menus'); //enable menus
 add_theme_support('post-thumbnails'); //enable post thumbnails
@@ -86,7 +84,24 @@ function prefix_add_my_stylesheet() {
   wp_enqueue_style( 's452-style' );
 
 }
-	
+
+function my_output_cpt ($post_type) {
+  $args = array(
+	'post_type' => $post_type,
+	'posts_per_page' => -1,
+	'post_status' => 'publish',
+	'caller_get_posts'=> 1
+  );
+  $my_query = new WP_Query($args);
+  echo '<dl class="'.$post_type.' toggle_box">';
+  $c = 0;
+  while ($my_query->have_posts()) : $my_query->the_post();
+	echo '<dt data-id="'.$c.'" data-class="'.$post_type.'">'.get_the_title().'</dt>';
+	echo '<dd id="dd_'.$c.'" class="'.$post_type.'">'.get_the_content().'</dd>';
+	++$c;
+  endwhile;
+  echo '</dl>';
+}
 
 
 /*	TINYMCE
