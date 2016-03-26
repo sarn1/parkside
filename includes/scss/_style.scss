@@ -19,8 +19,8 @@ body {
   //skeleton overrides
   h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack-2;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 
   p, table {
@@ -33,11 +33,10 @@ body {
 
   ul {
     list-style: disc;
-    margin:-10px 0 0 0;
-    padding:5px 5px 5px 25px;
+    padding: 5px 5px 5px 25px;
 
     li {
-      margin-bottom:2px;
+      margin-bottom: 2px;
     }
   }
 
@@ -81,7 +80,6 @@ body {
     @include responsive-img;
   }
 
-
   //head
   .head_top {
     max-width: $max-width;
@@ -113,14 +111,14 @@ body {
     }
 
     #ico_facebook {
-      max-width:32px;
+      max-width: 32px;
     }
   }
 
   //nav
   nav {
-    margin:auto;
-    width:100%;
+    margin: auto;
+    width: 100%;
     text-align: center;
     background-color: $primary-color;
 
@@ -128,16 +126,16 @@ body {
       color: $primary-color;
     }
 
-    .current-menu-parent>a, .current-menu-item a {
+    .current-menu-parent > a, .current-menu-item a {
       color: $link-color;
     }
   }
 
   nav ul {
     margin: 0 auto;
-    padding:0;
+    padding: 0;
     max-width: $menu-max-width;
-    width:100%;
+    width: 100%;
     line-height: 40px;
   }
 
@@ -150,7 +148,7 @@ body {
   nav ul li a {
     @include inline-block;
     line-height: $line-height;
-    padding:  0 15px;
+    padding: 0 15px;
     color: $font-color;
     text-decoration: none;
   }
@@ -165,8 +163,9 @@ body {
     opacity: 0;
     filter: alpha(opacity=0);
     width: $sub-menu-max-width;
+    line-height:30px;
     position: absolute;
-    top:100%;
+    top: 100%;
     left: -55px;
     z-index: 999999;
     height: 0px;
@@ -186,7 +185,7 @@ body {
 
   nav ul li span {
     display: none;
-    width:100%;
+    width: 100%;
   }
 
   nav ul li:hover ul {
@@ -204,7 +203,6 @@ body {
 
   nav ul ul li a {
     display: block;
-    line-height: $line-height;
     text-transform: none;
     position: relative;
     z-index: 999999;
@@ -225,7 +223,7 @@ body {
   //content body
   #content_body {
     max-width: $max-width;
-    margin:auto;
+    margin: auto;
     font-size: $font-size;
     line-height: $line-height;
 
@@ -268,7 +266,8 @@ body {
         }
       }
 
-      table { // for adobe
+      table {
+        // for adobe
         td:first-child {
           width: 97px;
         }
@@ -278,7 +277,6 @@ body {
         }
       }
     }
-
 
     //widget box
     .side_widget {
@@ -323,7 +321,7 @@ body {
 
         &.google_maps {
           padding: 0 0 15px 0; //override for google maps widget
-          border: 1thin solid $font-color;
+          border: 1 thin solid $font-color;
           text-align: center;
 
           a {
@@ -361,8 +359,15 @@ body {
     }
 
     dd {
-      display:none;
+      display: none;
       margin: 5px 0 15px 0;
+    }
+  }
+
+  //responsive menu
+  #responsive-menu {
+    .appendLink {
+      display:none;
     }
   }
 

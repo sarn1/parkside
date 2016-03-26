@@ -9,7 +9,6 @@ Build external libraries put into SASS libraries
 - Google Maps on contact page is hardcoded in index.php
 - UPDATED TOGGLE BOX CODE - Custom javascript & functionality for toggle box in: functions.php, scripts.min.js and styles.
 
-
 ==========
 PLUGINS
 ==========
@@ -21,14 +20,10 @@ PLUGINS
 - custom post widget
 - toolset types
 - post type order
-
+- ag custom admin
 
 ==========
 TODO
 ==========
 - security plugins to hide
-- minify head, sidebar
-- compress css
-
-- responsive & test
 - backup existing site
